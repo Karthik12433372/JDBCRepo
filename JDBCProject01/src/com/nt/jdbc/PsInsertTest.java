@@ -21,7 +21,7 @@ public class PsInsertTest {
 				System.out.println("Enter the students count :");
 				count = sc.nextInt();
 			}
-			conn = DriverManager.getConnection("jdbc:mysql:///karthik","root","Karthik@123");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/karthik","root","Karthik@123");
 
 			if(conn!=null) {
 				ps = conn.prepareStatement(STUDENT_INSERT_QUERY);
